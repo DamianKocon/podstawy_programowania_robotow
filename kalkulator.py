@@ -1,18 +1,3 @@
-# Wprowadzenie do Pythona, środowisko Thonny IDE, zmienne oraz kalkulator zasilania
-
-## Konfiguracja środowiska
-
-1. Zainstaluj lub/i uruchom program [Thonny](https://thonny.org/). Przy pierwszym uruchomieniu wybierz standardowy układ (Language: polski, Initial settings: Standard).
-2. Włącz podgląd zmiennych: z menu górnego wybierz `Podgląd` → `Zmienne`.
-3. Utwórz folder w którym będziesz przechowywać skrypty pythona np. `ppr`, w Thonny w edytorze wpisz:
-```python
-print("Hello World!")
-```
-i zapisz we wcześniej stworzonym katalogu jako `test.py`. Kliknij zielony przycisk ze strzałką ("Uruchom") na górnym pasku lub naciśnij klawisz F5.
-
-## Pierwszy program
-
-```python
 print("=== KALKULATOR DO OBLICZANIA MOCY REZYSTORÓW ===")
 print("Wprowadź dane techniczne komponentów:\n")
 
@@ -27,7 +12,7 @@ print("Wprowadź dane techniczne komponentów:\n")
 napiecie_v = float(input("Podaj napięcie na rezystorze [V]: "))
 
 # ZADANIE 1: Pobierz prąd płynący przez rezystor [mA]
-prad_mA = <uzupelnij>
+prad_mA = float(input("Podaj wartość prądu w mA: "))
 
 # ==============================================================================
 # KROK 2: OBLICZENIA INŻYNIERYJNE
@@ -37,7 +22,7 @@ prad_mA = <uzupelnij>
 prad_A = prad_mA / 1000
 
 # ZADANIE 2: Oblicz moc na rezystorze w Watach [W] (Wzór: P = U * I)
-moc_wat = <uzupelnij>
+moc_wat = napiecie_v * prad_A
 
 # ==============================================================================
 # KROK 3: RAPORT WYJŚCIOWY (f-stringi)
@@ -54,7 +39,6 @@ print("=" * 40)
 print(f"Napięcie zasilania: {napiecie_v:.1f} V")
 
 # ZADANIE 3: Wyświetl moc w W (zaokrągloną do 2 miejsc: :.2f)
-print(f"Moc na rezystorze:  {<uzupelnij>:.1f} W")
+print(f"Moc na rezystorze:  {moc_wat:.1f} W")
 
 print("=" * 40)
-```
