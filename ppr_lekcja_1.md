@@ -1,0 +1,1 @@
+# Wprowadzenie do Pythona, środowisko Thonny IDE, zmienne oraz kalkulator zasilania
