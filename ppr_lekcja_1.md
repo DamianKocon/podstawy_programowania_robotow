@@ -43,12 +43,10 @@ pojemnosc_ah = pojemnosc_mah / 1000
 # ZADANIE 2A: Oblicz moc znamionową układu w Watach [W] (Wzór: P = U * I)
 moc_wat = <uzupełnij>
 
-# ZADANIE 2B: Oblicz czas pracy na baterii w godzinach (Wzór: Czas_h =
-Pojemność_Ah / Prąd_A)
+# ZADANIE 2B: Oblicz czas pracy na baterii w godzinach (Wzór: Czas_h = Pojemność_Ah / Prąd_A)
 czas_pracy_h = <uzupełnij>
 
-# ZADANIE 2C: Przelicz czas pracy z godzin na minuty (Przemnóż czas w
-godzinach przez 60)
+# ZADANIE 2C: Przelicz czas pracy z godzin na minuty (Przemnóż czas w godzinach przez 60)
 czas_pracy_min = <uzupełnij>
 
 
@@ -66,8 +64,7 @@ print("=" * 40)
 # PRZYKŁAD:
 print(f"Napięcie zasilania: {napiecie_v:.1f} V")
 
-# ZADANIE 3A: Wyświetl pojemność w Ah (zaokrągloną do 2 miejsc: :.2f)
-oraz mAh (:.0f)
+# ZADANIE 3A: Wyświetl pojemność w Ah (zaokrągloną do 2 miejsc: :.2f) oraz mAh (:.0f)
 print(f"Pojemność baterii:  {<uzupełnij>:.2f} Ah ({<uzupełnij>:.0f} mAh)")
 
 # ZADANIE 3B: Wyświetl moc w Watach (zaokrągloną do 1 miejsca: :.1f)
