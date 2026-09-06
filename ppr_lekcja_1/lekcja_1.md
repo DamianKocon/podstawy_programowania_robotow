@@ -11,10 +11,10 @@ print("Hello World!")
 i zapisz we wcześniej stworzonym katalogu jako `test.py`. Kliknij zielony przycisk ze strzałką ("Uruchom") na górnym pasku lub naciśnij klawisz F5.
 
 ## Pierwszy program
-
+Skopiuj poniższy kod do edytora Thonny i zamień `<uzupełnij>` na właściwy kod programu.
 ```python
-print("=== KALKULATOR DO OBLICZANIA MOCY REZYSTORÓW ===")
-print("Wprowadź dane techniczne komponentów:\n")
+print("=== KALKULATOR DO OBLICZANIA KOSZTU ENERGII ELEKTRYCZNEJ ===")
+print("Wprowadź dane techniczne:\n")
 
 # ==============================================================================
 # KROK 1: POBIERANIE DANYCH WEJŚCIOWYCH
@@ -24,20 +24,33 @@ print("Wprowadź dane techniczne komponentów:\n")
 # ==============================================================================
 
 # PRZYKŁAD:
-napiecie_v = float(input("Podaj napięcie na rezystorze [V]: "))
+napiecie_v = float(input("Podaj napięcie na urządzeniu [V]: "))
 
-# ZADANIE 1: Pobierz prąd płynący przez rezystor [mA]
-prad_mA = <uzupelnij>
+# ZADANIE 1A: Pobierz prąd płynący przez urządzenie [A]
+prad_A = <uzupełnij>
+
+# ZADANIE 1B: Pobierz czas pracy urządzenia [min]
+czas_min = <uzupełnij>
 
 # ==============================================================================
 # KROK 2: OBLICZENIA INŻYNIERYJNE
 # ==============================================================================
 
-# PRZYKŁAD: Konwersja pprądu z mA na A (1 A = 1000 mA)
-prad_A = prad_mA / 1000
+# PRZYKŁAD: Konwersja czasu z minut na godziny (1 h = 60 min)
+czas_h = czas_min / 60
 
-# ZADANIE 2: Oblicz moc na rezystorze w Watach [W] (Wzór: P = U * I)
-moc_wat = <uzupelnij>
+# ZADANIE 2A: Oblicz moc na urządzeniu w Watach [W] (Wzór: P = U * I)
+moc_wat = <uzupełnij>
+
+# ZADANIE 2B: Zamień waty na kilowaty (1 kW = 1000 W)
+moc_kwat = <uzupełnij>
+
+# ZADANIE 2C: Oblicz pracę prądu elektrycznego w kWh (Wzór: W = P * t)
+praca_kwath = <uzupełnij>
+
+# ZADANIE 2D: Oblicz koszt energii elektrycznej pobieranej przez urządzenie (1 kWh = 0.6585 zł)
+cena = <uzupełnij>
+koszt_zl = <uzupełnij>
 
 # ==============================================================================
 # KROK 3: RAPORT WYJŚCIOWY (f-stringi)
@@ -47,14 +60,14 @@ moc_wat = <uzupelnij>
 # ==============================================================================
 
 print("\n" + "=" * 40)
-print("       RAPORT DIAGNOSTYCZNY ZASILANIA     ")
+print("       RAPORT KOSZTÓW PRACY URZĄDZENIA     ")
 print("=" * 40)
 
 # PRZYKŁAD:
 print(f"Napięcie zasilania: {napiecie_v:.1f} V")
 
-# ZADANIE 3: Wyświetl moc w W (zaokrągloną do 2 miejsc: :.2f)
-print(f"Moc na rezystorze:  {<uzupelnij>:.1f} W")
+# ZADANIE 3A: Wyświetl koszt energii elektrycznej w zł (zaokrąglony do 2 miejsc: :.2f)
+print(f"Koszt energii elektrycznej:  {<uzupełnij>:.2f} zł")
 
 print("=" * 40)
 ```
