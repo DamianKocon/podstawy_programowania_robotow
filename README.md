@@ -1,3 +1,4 @@
 # Podstawy programowania robotów
 
 1. [Lekcja 1: Wprowadzenie do Pythona, środowisko Thonny IDE, zmienne oraz kalkulator zasilania](ppr_lekcja_1/lekcja_1.md)
+2. [Lekcja 2: Instrukcja warunkowa if, flagi logiczne](ppr_lekcja_2/lekcja_2.md)
