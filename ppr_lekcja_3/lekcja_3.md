@@ -5,7 +5,6 @@
 * import
 * funkcja `random.randint`
 * pętla while
-* zaprzeczenie logiczne not
 * przerwanie pętli przez break
 
 ## Zgadnij liczbę
@@ -22,7 +21,7 @@ print("Komputer wylosował liczbę od 1 do 10. Spróbuj ją odgadnąć!\n")
 # KROK 1: INICJALIZACJA ZMIENNYCH
 # - random.randint(1, 10) losuje liczbę całkowitą (int) z przedziału <1, 10>
 # - licznik_prob (int) zlicza, ile podejść wykonał uczeń
-# - liczba_zostala_odgadnieta (bool) to flaga sterująca pętlą while
+# - gra_jest_aktywna (bool) to flaga sterująca pętlą while
 # ==============================================================================
 
 tajna_liczba = random.randint(1, 10)
@@ -30,16 +29,16 @@ tajna_liczba = random.randint(1, 10)
 # ZADANIE 1: Ustaw początkową wartość licznika prób na 0 (typ int)
 licznik_prob = <uzupełnij>
 
-# Flaga logiczna (bool) – na początku False, bo użytkownik jeszcze nie zgadł
-liczba_zostala_odgadnieta = False
+# Flaga logiczna (bool) – na początku True, bo użytkownik jeszcze nie zgadł
+gra_jest_aktywna = True
 
 
 # ==============================================================================
-# KROK 2: PĘTLA WHILE (Działa tak długo, jak liczba_zostala_odgadnieta wynosi False)
+# KROK 2: PĘTLA WHILE (Działa tak długo, jak gra_jest_aktywna wynosi False)
 # ==============================================================================
 
-# Pętla wykonuje się, dopóki NIE zgadniesz (not liczba_zostala_odgadnieta)
-while not liczba_zostala_odgadnieta:
+# Pętla wykonuje się, dopóki nie zgadniesz
+while gra_jest_aktywna:
     
     # Pobieramy strzał użytkownika i zamieniamy na liczbę całkowitą (int)
     strzal = int(input("Podaj swoją liczbę (1-10): "))
@@ -50,8 +49,8 @@ while not liczba_zostala_odgadnieta:
     # ZADANIE 3: Sprawdź warunki wygranej / podpowiedzi
     if strzal == tajna_liczba:
         print(f"\n[BRAWO!] Trafiłeś! Tajna liczba to rzeczywiście {tajna_liczba}.")
-        # Zmień flagę na True, co spowoduje zakończenie pętli while
-        liczba_zostala_odgadnieta = <uzupełnij>
+        # Zmień flagę na False, co spowoduje zakończenie pętli while
+        gra_jest_aktywna = <uzupełnij>
         
     elif strzal < tajna_liczba:
         print("[PODPOWIEDŹ] Za mało! Spróbuj większej liczby.")
