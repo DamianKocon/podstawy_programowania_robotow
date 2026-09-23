@@ -22,7 +22,7 @@ print("Komputer wylosował liczbę od 1 do 10. Spróbuj ją odgadnąć!\n")
 # KROK 1: INICJALIZACJA ZMIENNYCH
 # - random.randint(1, 10) losuje liczbę całkowitą (int) z przedziału <1, 10>
 # - licznik_prob (int) zlicza, ile podejść wykonał uczeń
-# - czy_zgadnal (bool) to flaga sterująca pętlą while
+# - liczba_zostala_odgadnieta (bool) to flaga sterująca pętlą while
 # ==============================================================================
 
 tajna_liczba = random.randint(1, 10)
@@ -31,15 +31,15 @@ tajna_liczba = random.randint(1, 10)
 licznik_prob = <uzupełnij>
 
 # Flaga logiczna (bool) – na początku False, bo użytkownik jeszcze nie zgadł
-czy_zgadnal = False
+liczba_zostala_odgadnieta = False
 
 
 # ==============================================================================
-# KROK 2: PĘTLA WHILE (Działa tak długo, jak czy_zgadnal wynosi False)
+# KROK 2: PĘTLA WHILE (Działa tak długo, jak liczba_zostala_odgadnieta wynosi False)
 # ==============================================================================
 
-# Pętla wykonuje się, dopóki NIE zgadniesz (not czy_zgadnal)
-while not czy_zgadnal:
+# Pętla wykonuje się, dopóki NIE zgadniesz (not liczba_zostala_odgadnieta)
+while not liczba_zostala_odgadnieta:
     
     # Pobieramy strzał użytkownika i zamieniamy na liczbę całkowitą (int)
     strzal = int(input("Podaj swoją liczbę (1-10): "))
@@ -51,7 +51,7 @@ while not czy_zgadnal:
     if strzal == tajna_liczba:
         print(f"\n[BRAWO!] Trafiłeś! Tajna liczba to rzeczywiście {tajna_liczba}.")
         # Zmień flagę na True, co spowoduje zakończenie pętli while
-        czy_zgadnal = <uzupełnij>
+        liczba_zostala_odgadnieta = <uzupełnij>
         
     elif strzal < tajna_liczba:
         print("[PODPOWIEDŹ] Za mało! Spróbuj większej liczby.")
