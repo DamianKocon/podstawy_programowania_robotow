@@ -34,7 +34,7 @@ gra_jest_aktywna = True
 
 
 # ==============================================================================
-# KROK 2: PĘTLA WHILE (Działa tak długo, jak gra_jest_aktywna wynosi False)
+# KROK 2: PĘTLA WHILE (Działa tak długo, jak gra_jest_aktywna wynosi True)
 # ==============================================================================
 
 # Pętla wykonuje się, dopóki nie zgadniesz
