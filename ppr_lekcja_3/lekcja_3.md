@@ -16,7 +16,7 @@ Uruchom poniższy kod w edytorze Thonny.
 import random  # Biblioteka do generowania liczb losowych
 
 print("=== GRA: ZGADNIJ LICZBĘ STEROWNIKA ===")
-print("Komputer wosował liczbę od 1 do 10. Spróbuj ją odgadnąć!\n")
+print("Komputer wylosował liczbę od 1 do 10. Spróbuj ją odgadnąć!\n")
 
 # ==============================================================================
 # KROK 1: INICJALIZACJA ZMIENNYCH
