@@ -1,4 +1,4 @@
-# Pętla while, break, cykl główny
+# Pętla for, funkcja range
 
 ## Nowe elementy języka
 
