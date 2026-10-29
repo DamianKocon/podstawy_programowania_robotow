@@ -4,4 +4,4 @@
 2. [Lekcja 2: Instrukcja warunkowa if, flagi logiczne](ppr_lekcja_2/lekcja_2.md)
 3. [Lekcja 3: Pętla while](ppr_lekcja_3/lekcja_3.md)
 4. [Lekcja 4: Pętla for](ppr_lekcja_4/lekcja_4.md)
-5. [Lekcja 5: Listy](ppr_lekcja_4/lekcja_4.md)
+5. [Lekcja 5: Listy](ppr_lekcja_5/lekcja_5.md)
