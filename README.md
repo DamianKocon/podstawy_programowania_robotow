@@ -7,3 +7,4 @@
 5. [Lekcja 5: Listy](ppr_lekcja_5/lekcja_5.md)
 6. [Lekcja 6: Anatomia listy – indeksy, modyfikacja i przeglądanie pętlą for](ppr_lekcja_6/lekcja_6.md)
 7. [Lekcja 7: Zaawansowane przetwarzanie i metody list](ppr_lekcja_7/lekcja_7.md)
+8. [Zadanie projektowe 1](zadanie_projektowe_1.md)
